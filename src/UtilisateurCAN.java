@@ -1,4 +1,6 @@
-// UtilisateurCAN.java (classe abstraite)
+/**
+ * @author Ellou
+ **/
 import java.util.Date;
 
 public abstract class UtilisateurCAN {
