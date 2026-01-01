@@ -15,6 +15,9 @@ public abstract class UtilisateurCAN {
         this.nom = nom;
         this.categorie = categorie;
     }
+    public int getId() {
+        return id;
+    }
 
     public abstract int getNiveauAcces();
 
