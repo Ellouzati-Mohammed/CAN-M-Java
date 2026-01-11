@@ -1,4 +1,14 @@
-### IntelliJ IDEA ###
+# Ignore compiled Java classes
+*.class
+
+# Ignore common build/output folders
+/bin/
+/out/
+/target/
+
+# IDE files
+*.iml
+.idea/### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/

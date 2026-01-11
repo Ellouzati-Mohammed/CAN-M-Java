@@ -4,9 +4,10 @@
 // ControleAccess.java
 import java.util.Date;
 
-public class ControleAccess {
+public class ControleAccess implements Securisable {
 
-    public boolean verifierAcces(Badge badge, ZoneSecurisee zone) {
+    @Override
+    public boolean verifierAccess(Badge badge, ZoneSecurisee zone) {
         if (badge == null) {
             throw new BadgeInvalideException("Badge non fourni");
         }
@@ -23,18 +24,22 @@ public class ControleAccess {
         return utilisateur.getNiveauAcces() >= zone.getNiveauRequis();
     }
 
+    @Override
     public void autoriser(ZoneSecurisee zone) {
         // Méthode pour autoriser l'accès à une zone (pourrait déclencher l'ouverture d'une porte)
         System.out.println("Accès autorisé à la zone: " + zone.getNomZone());
     }
 
+    @Override
     public void refuser(ZoneSecurisee zone) {
         // Méthode pour refuser l'accès à une zone
         System.out.println("Accès refusé à la zone: " + zone.getNomZone());
     }
 
+    // verifierAccess implemented above (previously verifierAcces)
+
     public AccesLog enregistrerTentative(Badge badge, ZoneSecurisee zone, boolean accesAutorise) {
         String resultat = accesAutorise ? "AUTORISE" : "REFUSE";
         return new AccesLog(badge, zone, resultat);
     }
-}
+}  

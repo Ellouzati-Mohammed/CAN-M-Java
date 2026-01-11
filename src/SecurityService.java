@@ -56,11 +56,11 @@ public class SecurityService {
 
         boolean accesAutorise = false;
         try {
-            accesAutorise = controleAcces.verifierAcces(badge, zone);
+            accesAutorise = controleAcces.verifierAccess(badge, zone);
 
             if (accesAutorise) {
                 controleAcces.autoriser(zone);
-                badge.incrementerTentativesFail(); // Réinitialiser les tentatives échouées
+                // badge.incrementerTentativesFail(); // Réinitialiser les tentatives échouées
             } else {
                 controleAcces.refuser(zone);
                 badge.incrementerTentativesFail();
