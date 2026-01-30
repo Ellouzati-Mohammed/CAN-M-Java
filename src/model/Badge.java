@@ -1,8 +1,11 @@
+package model;
 /**
  * @author Ellou
  **/
 // Badge.java
 import java.util.Date;
+
+import Interface.Accreditable;
 
 public class Badge implements Accreditable {
     private int numeroBadge;

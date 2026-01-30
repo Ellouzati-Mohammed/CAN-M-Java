@@ -1,8 +1,18 @@
+package service;
 /**
  * @author Ellou
  **/
 import java.util.*;
 import java.util.stream.Collectors;
+
+import Exception.AccesRefuseException;
+import Exception.BadgeInvalideException;
+import Exception.DonneeInvalideException;
+import Exception.ZoneInterditeException;
+import model.AccesLog;
+import model.Badge;
+import model.UtilisateurCAN;
+import model.ZoneSecurisee;
 
 public class SecurityService {
     private List<UtilisateurCAN> utilisateurs;

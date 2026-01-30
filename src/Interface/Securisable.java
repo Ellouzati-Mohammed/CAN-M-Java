@@ -1,3 +1,7 @@
+package Interface;
+
+import model.Badge;
+import model.ZoneSecurisee;
 /**
  * @author Ellou
  **/

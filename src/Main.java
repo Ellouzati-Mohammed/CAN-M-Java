@@ -1,8 +1,16 @@
 import java.util.Calendar;
 import java.util.Date;
 
+import model.Badge;
+import model.Spectateur;
+import model.Staff;
+import model.VIP;
+import model.ZoneSecurisee;
+import service.SecurityService;
+
 public class Main {
     public static void main(String[] args) {
+
         SecurityService service = new SecurityService();
 
         // Création des zones
@@ -34,7 +42,7 @@ public class Main {
         Badge badgeVIP = service.genererBadge(vip.getId(), dateDebut, dateFin);
 
         System.out.println("--- Scénario de test : vérification des accès ---");
-
+       
         // Cas autorisé
         try {
             System.out.println("Spectateur -> Entrée (attendu: autorisé): " +
