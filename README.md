@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-8%2B-orange?logo=openjdk&logoColor=white" alt="Java 8+"/>
+  <img src="https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white" alt="Java 17+"/>
   <img src="https://img.shields.io/badge/Architecture-Layered-blue" alt="Layered architecture"/>
   <img src="https://img.shields.io/badge/Paradigm-Object--Oriented-purple" alt="Object-oriented programming"/>
 </p>
