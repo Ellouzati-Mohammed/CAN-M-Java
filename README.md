@@ -372,21 +372,6 @@ The entry point demonstrates:
 
 ---
 
-## ⚠️ Implementation Notes
-
-This is an educational access-control simulation, not a production-ready physical security system.
-
-- Badge records and audit logs are maintained in memory.
-- Badge numbers use Java `hashCode()` and are not guaranteed to be collision-free.
-- Failed-attempt counters are not automatically reset after successful access.
-- Access logging occurs after badge and zone lookup; invalid badge or zone identifiers can throw exceptions before an audit entry is created.
-- Actual door hardware integration and persistent storage are not implemented.
-
----
-
-## 👨‍💻 Author
-
-**Mohammed Ellouzati**
 
 - GitHub: [@Ellouzati-Mohammed](https://github.com/Ellouzati-Mohammed)
 - LinkedIn: [Mohammed Ellouzati](https://www.linkedin.com/in/mohammed-ellouzati-359873270)
