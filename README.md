@@ -104,13 +104,6 @@ This project relates to the following areas:
 - Intrusion detection concepts.
 - Application architecture and code organization.
 
-## 👨‍💻 Author
-
-**Mohammed Ellouzati**
-
-- GitHub: [Ellouzati-Mohammed](https://github.com/Ellouzati-Mohammed)
-- LinkedIn: [Mohammed Ellouzati](https://www.linkedin.com/in/mohammed-ellouzati-359873270)
-- Email: [mohammedellouzati047@gmail.com](mailto:mohammedellouzati047@gmail.com)
 
 ---
 
